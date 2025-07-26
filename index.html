@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday ปุงปิม</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background: radial-gradient(circle, #ffdee9, #b5fffc);
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 30px 10px;
+      text-align: center;
+      color: #ff1493;
+      user-select: none;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 6px white;
+      animation: float 2s ease-in-out infinite;
+      margin-bottom: 20px;
+    }
+
+    #mainText {
+      font-size: 2em;
+      color: #ff0080;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+      white-space: pre-wrap;
+    }
+
+    #wishContainer {
+      font-size: 1.5em;
+      color: #d10079;
+      margin-bottom: 30px;
+      letter-spacing: 0.05em;
+      white-space: pre-wrap;
+    }
+
+    img.birthday-image {
+      width: 45%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 30px;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    canvas#confetti,
+    canvas#fallingStars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday 🎂</h1>
+  <div id="mainText">🎈 ปุงปิม อายุครบ 19 ปี 🥳</div>
+  <div id="wishContainer"></div>
+
+  
+ <a href="https://imgbb.com/"><img src="https://i.ibb.co/kgfWxPXn/1234.jpg" alt="1234" border="0"></a>
+
+
+
+  <canvas id="confetti"></canvas>
+  <canvas id="fallingStars"></canvas>
+</body>
+</html>
